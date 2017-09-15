@@ -81,7 +81,7 @@
 
 		playListRender(){ //creating playlist
 			let back = document.querySelector(".back");
-
+			let ol = document.createElement("ol");
 			this.playlist.forEach( ( elem, i ) => {
 				let li = document.createElement("li");
 				let a = document.createElement("a");
@@ -89,7 +89,6 @@
 				let h4 = document.createElement("h4");
 				let img = document.createElement("img");
 				let div = document.createElement("div");
-				let ol = document.createElement("ol");
 				h4.innerHTML = elem.title;
 				h3.innerHTML = elem.artist;
 				img.src = elem.image;
@@ -117,8 +116,8 @@
 				a.appendChild( div );
 				li.appendChild( a );
 				ol.appendChild( li );
-				back.appendChild( ol );
 			});
+			back.appendChild( ol );
 		}
 
 		play() { // play/pause
