@@ -5,7 +5,7 @@
 		constructor () {
 			this.playlist = [
 				{src:'src/1.mp3', title:"Running Out of Time", artist:"Sivert Hoyem", image:"img/1.jpg"},
-				{src:'src/2.mp3', title:"found out", artist:"noir & richard davis", image:"img/2.jpg"},
+				{src:'src/2.mp3', title:"found out", artist:"Noir & richard davis", image:"img/2.jpg"},
 				{src:'src/3.mp3', title:"Runnin'(Lose It all)", artist:"Naughty Boy", image:"img/3.jpg"},
 				{src:'src/4.mp3', title:"The Little Things Give You Away", artist:"Linkin Park", image:"img/4.jpg"},
 				{src:'src/5.mp3', title:"Lost", artist:"Within Temptation", image:"img/5.jpg"},
