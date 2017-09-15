@@ -79,7 +79,6 @@
 		}
 
 		playListRender(){ //creating playlist
-			let player = this;
 			let back = document.querySelector(".back");
 
 			this.playlist.forEach( ( elem, i ) => {
@@ -96,19 +95,19 @@
 				a.addEventListener("click", ( e ) => {
 					e.preventDefault();
 					document.querySelector(".player").classList.toggle("playlist");
-					player.NumberOfSong = i;
-					player.audio.src = player.playlist[player.NumberOfSong].src;
-					if( player.loopsTrack === true ){
-						player.loopToggle();
+					this.NumberOfSong = i;
+					this.audio.src = this.playlist[this.NumberOfSong].src;
+					if( this.loopsTrack === true ){
+						this.loopToggle();
 					}
-					if( player.shuffle === true ){
-						player.shuffleToggle();
+					if( this.shuffle === true ){
+						this.shuffleToggle();
 					}
-					if( player.playingTrek === false ){
-						player.play();
+					if( this.playingTrek === false ){
+						this.play();
 					}
-					else player.audio.play();
-					player.tags();
+					else this.audio.play();
+					this.tags();
 				});
 				div.appendChild( h3 );
 				div.appendChild( h4 );
