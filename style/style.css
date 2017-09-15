@@ -48,6 +48,10 @@ a.play svg path,a.play svg line{
 h3,h4,ol {
 	margin: 0;
 }
+ol{
+	padding: 0;
+	list-style-type: none;
+}
 
 hr {
 	pointer-events: none;
@@ -229,7 +233,7 @@ input[type="range"]::-webkit-slider-thumb {
 .back li a {
 	display: flex;
 	align-items: center;
-	padding:0 0 0 12px;
+	padding: 0 0 0 30px;
 	position: absolute;
 	top: 0;
 	width: 100%;
