@@ -64,7 +64,7 @@ hr {
 }
 
 li {
-	height: 78px;
+	height: 72.8px;
 	width: 100%;
 	padding: 16px 0px 0px 0px;
 }
@@ -204,8 +204,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 .back img {
 	display: block;
-	height: 78px;
-	width: 78px;
+	height:72.8px;
+	width: 72.8px;
 }
 
 .back img + div {
@@ -353,7 +353,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .controls.top {
 	justify-content: space-around;
-	padding: 12px;
+	padding:4px 12px 0px 12px;
 }
 
 .controls.top a {
@@ -389,7 +389,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .controls.bottom a ,span{
 	width: 24px;
-	height: 20px;
+	height: 12px;
 }
 
 .controls.bottom a svg ,span{
