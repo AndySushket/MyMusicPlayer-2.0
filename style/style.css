@@ -204,9 +204,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 .back img {
 	display: block;
-	border-radius: 2px;
-	height: 32px;
-	width: 32px;
+	height: 78px;
+	width: 78px;
 }
 
 .back img + div {
@@ -233,7 +232,7 @@ input[type="range"]::-webkit-slider-thumb {
 .back li a {
 	display: flex;
 	align-items: center;
-	padding: 0 0 0 30px;
+	padding: 0 0 0 0px;
 	position: absolute;
 	top: 0;
 	width: 100%;
