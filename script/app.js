@@ -27,6 +27,7 @@
 			this.tags();
 			this.setVol(.5);
 			this.playListRender();
+			this.currentSong ( this.NumberOfSong );
 			this.animatedIntro();
 			source = audioCtx.createMediaElementSource(this.audio);
 			destination = audioCtx.destination;
@@ -107,6 +108,7 @@
 						this.play();
 					}
 					else this.audio.play();
+					this.currentSong ( this.NumberOfSong );
 					this.tags();
 				});
 				div.appendChild( h3 );
@@ -174,12 +176,20 @@
 					this.NumberOfSong = songNumber;
 				}
 				this.audio.src = this.playlist[this.NumberOfSong].src;
+				this.currentSong ( this.NumberOfSong );
 				this.audio.play();
 				this.tags();
 			}
 			document.querySelectorAll("time span")[0].innerHTML = this.timer( Current );
 			document.querySelectorAll("time span")[1].innerHTML = this.timer( duration );
 		}
+
+		currentSong ( song ) {
+			if(document.querySelector(".playing")){
+				document.querySelector(".playing").classList.toggle("playing");
+			}
+			document.querySelectorAll("ol a")[song].classList.toggle("playing");
+		};
 
 		forward(){ //next song
 			if ( this.shuffle === true ) {
@@ -190,6 +200,7 @@
 				this.NumberOfSong++;
 			}
 			this.audio.src = this.playlist[this.NumberOfSong].src;
+			this.currentSong ( this.NumberOfSong );
 			this.audio.load();
 			this.audio.play();
 			this.tags();
@@ -209,6 +220,7 @@
 				this.NumberOfSong--;
 			}
 			this.audio.src = this.playlist[this.NumberOfSong].src;
+			this.currentSong ( this.NumberOfSong );
 			this.audio.load();
 			this.audio.play();
 			this.tags();
